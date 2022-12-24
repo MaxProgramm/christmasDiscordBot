@@ -24,12 +24,6 @@ async def on_message(message: discord.Message):
                     except:
                         continue
 
-    if "https://" in message.content:
-        await message.delete()
-        await message.channel.send(f"{message.author.mention} Don't send links!")
-    else:
-        return
-
 
 
 client.run(TOKEN)
