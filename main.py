@@ -2,7 +2,7 @@ import discord
 import time
 TOKEN = "ENTER_TOKEN_HERE"
 # Your message
-ChristmasMessage = "Merry Christmas!:christmas_tree::gift: Wünscht der MC World DC-Server"
+ChristmasMessage = "Merry Christmas!:christmas_tree::gift:"
 WaitTime = 0.5
 
 client = discord.Client(intents=discord.Intents.all())
