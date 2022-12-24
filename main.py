@@ -1,6 +1,7 @@
 import discord
 import time
 TOKEN = "ENTER_TOKEN_HERE"
+ChristmasMessage = "Merry Christmas!:christmas_tree::gift: Wünscht der MC World DC-Server"
 
 client = discord.Client(intents=discord.Intents.all())
 
@@ -19,7 +20,7 @@ async def on_message(message: discord.Message):
             for user in GuildMembers:
                 if not user.bot:
                     try:
-                        await user.send("Merry Christmas!:christmas_tree::gift: Wünscht der MC World DC-Server")
+                        await user.send(ChristmasMessage)
                         time.sleep(0.5)
                     except:
                         continue
