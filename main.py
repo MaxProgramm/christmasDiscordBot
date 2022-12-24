@@ -1,7 +1,9 @@
 import discord
 import time
 TOKEN = "ENTER_TOKEN_HERE"
+# Your message
 ChristmasMessage = "Merry Christmas!:christmas_tree::gift: Wünscht der MC World DC-Server"
+WaitTime = 0.5
 
 client = discord.Client(intents=discord.Intents.all())
 
@@ -21,7 +23,7 @@ async def on_message(message: discord.Message):
                 if not user.bot:
                     try:
                         await user.send(ChristmasMessage)
-                        time.sleep(0.5)
+                        time.sleep(WaitTime)
                     except:
                         continue
 
