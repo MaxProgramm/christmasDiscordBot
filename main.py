@@ -21,6 +21,7 @@ async def on_message(message: discord.Message):
             print(GuildMembers)
             for user in GuildMembers:
                 if not user.bot:
+                    print(f"Current User: {user.name}")
                     try:
                         await user.send(ChristmasMessage)
                         time.sleep(WaitTime)
